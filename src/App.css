@@ -1,0 +1,204 @@
+/* App.css */
+
+/* Estilos generales */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e9f7f9; /* Color de fondo suave */
+  color: #333;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto; /* Espacio uniforme alrededor del contenedor */
+  padding: 30px;
+  background-color: #ffffff; /* Fondo blanco */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  border-radius: 10px;
+}
+
+/* Estilos para el formulario */
+.formulario {
+  max-width: 600px; /* Ancho máximo del formulario reducido */
+  margin: 0 auto 30px auto; /* Centrado horizontal y margen inferior */
+  background-color: #f5fafd;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.formulario h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #007bff;
+  text-align: center;
+}
+
+.formulario p.error {
+  color: #ff0000;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.formulario input[type="text"],
+.formulario input[type="date"],
+.formulario input[type="time"],
+.formulario textarea {
+  width: calc(100% - 24px); /* Ajuste para evitar el choque con el borde */
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccd0d5;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease;
+}
+
+.formulario input[type="text"]:focus,
+.formulario input[type="date"]:focus,
+.formulario input[type="time"]:focus,
+.formulario textarea:focus {
+  border-color: #007bff;
+}
+
+.formulario textarea {
+  resize: vertical;
+}
+
+.formulario button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.formulario button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el cursor */
+}
+
+/* Estilos para el listado de citas */
+.listado {
+  background-color: #f5fafd;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea si no caben en la fila */
+  gap: 15px; /* Espacio entre los elementos */
+}
+
+.listado h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #007bff;
+  text-align: center;
+  width: 100%; /* Asegura que el título ocupe toda la fila */
+}
+
+.listado ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px; /* Espacio entre los elementos de la lista */
+  width: 100%;
+}
+
+.listado li {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 calc(50% - 30px); /* Ancho del 50% menos el espacio entre los elementos */
+  box-sizing: border-box; /* Incluye padding y border en el ancho y alto total del elemento */
+}
+
+.listado li p {
+  margin: 5px 0;
+}
+
+.listado li button {
+  align-self: flex-end;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
+}
+
+.listado li button:hover {
+  background-color: #c82333;
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el cursor */
+}
+
+/* Estilos para cada cita */
+.cita {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px;
+}
+
+.cita p {
+  margin: 10px 0;
+}
+
+.cita button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
+}
+
+.cita button:hover {
+  background-color: #c82333;
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el cursor */
+}
+
+/* Estilos adicionales para mejorar la interfaz */
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  font-size: 36px;
+  color: #007bff;
+  margin: 0;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 16px;
+}
